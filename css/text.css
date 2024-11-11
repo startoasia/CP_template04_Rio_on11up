@@ -1,0 +1,163 @@
+.header {
+
+    margin: 1rem 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+#title_s {
+    display: inline-block;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 28px;
+    margin-bottom: 12px;
+    font-size: var(--fs-s);
+    font-weight: 400;
+    line-height: var(--fs-xxl);
+}
+
+#title_l {
+    font-size: var(--fs-m);
+    line-height: var(--fs-xxl);
+    color: var(--dark-gray);
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+#title_date {
+    /* color: var(--red); */
+    font-weight: bold;
+    font-size: var(--fs-normal);
+    text-align: center;
+    margin: 0;
+    padding: 5px 30px 5px 0px;
+    border-right: 2px solid var(--gray);
+
+}
+
+.title_date_month {
+    margin: 0;
+    padding-bottom: 16px;
+    line-height: 100%;
+}
+
+.title_date_number {
+    margin: 0;
+    font-size: var(--fs-big);
+    line-height: 100%;
+}
+
+p {
+    font-size: var(--fs-s);
+    line-height: 185%;
+}
+
+.txt-big {
+    font-size: var(--fs-l);
+}
+
+.txt-xl {
+    font-size: var(--fs-s);
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.imgTitle {
+    font-size: var(--fs-xs);
+}
+
+@media (max-width:768px) {
+    .brSP{
+        display: none;
+    }
+    #title_s {
+        font-size: var(--fs-normal);
+        padding: 0 20px;
+        line-height: 35px;
+    }
+
+    #title_l {
+        font-size: var(--fs-s);
+        line-height: var(--fs-xl);
+        padding: 0;
+    }
+
+    #title_date {
+        font-size: var(--fs-xxs);
+        display: none;
+    }
+
+    p {
+        font-size: var(--fs-18);
+    }
+
+    .txt-big {
+        font-size: var(--fs-m);
+    }
+
+    .txt-xl {
+        font-size: var(--fs-xs);
+    }
+
+    .imgTitle {
+        font-size: var(--fs-xxs);
+    }
+}
+
+/*------------------------------------*\
+    $顏色設定
+\*------------------------------------*/
+
+.txt-pink {
+    color: var(--pink);
+}
+
+.txt-red {
+    color: var(--red);
+}
+
+.txt-blue {
+    color: var(--blue);
+}
+
+.txt-lightBlue {
+    color: var(--blue-second)
+}
+
+.txt-gray {
+    color: var(--gray);
+}
+
+.txt-purple {
+    color: var(--purple);
+}
+
+.txt-dark {
+    color: var(--dark);
+}
+
+.txt-brown {
+    color: var(--brown);
+}
+
+.bg-yellow {
+    background: var(--yellow);
+}
+
+.bg-pink {
+    background: var(--pink);
+    color: var(--light);
+}
+
+.bg-blue {
+    background: var(--blue);
+    color: var(--light);
+}
+
+.bg-red {
+    background: var(--special-red);
+    color: var(--light);
+}

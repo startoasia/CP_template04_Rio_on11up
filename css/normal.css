@@ -1,0 +1,139 @@
+/* 導入【思源黑體】 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; */
+    font-family: "Noto Sans TC", serif;
+    background-color: var(--gray);
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    /* vertical-align: middle; */
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* 以上基本設定 */
+
+/*------------------------------------*\
+    $整體板塊
+\*------------------------------------*/
+
+
+
+.CP {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    /* border-left: var(--light-second) solid thin; */
+    /* border-right: var(--light-second) solid thin; */
+    line-height: 2em;
+    box-shadow: 0px 0 30px 0 #333;
+    background-color: var(--light);
+}
+
+.inner {
+    padding: 0 100px;
+}
+
+#title {
+    margin: 40px 0;
+    text-align: start;
+}
+
+#title hr {
+    margin-top: 16px;
+}
+
+.part {
+    margin-bottom: 96px;
+}
+
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu {
+    padding-top: 25px;
+    font-size: var(--fs-xs);
+}
+
+.menuTitle {
+    background-color: var(--dark);
+    color: var(--light);
+    display: inline-block;
+    padding: 5px 30px 5px 30px;
+    -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+}
+
+.menuPoint {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.w-img {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .inner {
+        padding: 0 20px;
+    }
+
+    .w-img {
+        width: 100%;
+    }
+
+    #title {
+        margin: 20px 0;
+        text-align: start;
+    }
+
+    .menuTitle {
+        padding: 5px 30px 5px 20px;
+    }
+
+    .part {
+        margin-bottom: 72px;
+    }
+
+    .part:last-child {
+        margin: 0;
+    }
+}
